@@ -16,11 +16,17 @@ const promiseOptions = (inputValue: string) =>
     }, 1000);
   });
 
-export default () => (
-  <AsyncSelect
-    isMulti
-    cacheOptions
-    defaultOptions
-    loadOptions={promiseOptions}
-  />
-);
+function App() {
+  return (
+    <div>
+      <AsyncSelect
+        isMulti
+        cacheOptions
+        defaultOptions
+        loadOptions={promiseOptions}
+      />
+    </div>
+  );
+}
+
+export default App;
